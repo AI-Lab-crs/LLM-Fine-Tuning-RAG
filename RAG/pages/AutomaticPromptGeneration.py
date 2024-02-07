@@ -6,6 +6,7 @@ from openai import OpenAI
 
 
 
+
 load_dotenv()
 
 client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
@@ -21,7 +22,7 @@ def generate_response(prompt):
     "Travel Guide","I want you to act as a travel guide. I will write you my location and you will suggest a place to visit near my location. In some cases, I will also give you the type of places I will visit. You will also suggest me places of similar type that are close to my first location. "
     "Plagiarism Checker","I want you to act as a plagiarism checker. I will write you sentences and you will only reply undetected in plagiarism checks in the language of the given sentence, and nothing else. Do not write explanations on replies. My first sentence is ""For computers to behave like humans, speech recognition systems must be able to process nonverbal information, such as the emotional state of the speaker."""
     "Character from Movie/Book/Anything","I want you to act like [character] from [series]. I want you to respond and answer like [character] using the tone, manner and vocabulary [character] would use. Do not write any explanations. Only answer like [character]. You must know all of the knowledge of [character]. "
-    "Advertiser","I want you to act as an advertiser. You will create a campaign to promote a product or service of your choice. You will choose a target audience, develop key messages and slogans, select the media channels for promotion, and decide on any additional activities needed to reach your goals. "
+    "Advertiser", "I want you to act as an advertiser. You will create a campaign to promote a product or service of your choice. You will choose a target audience, develop key messages and slogans, select the media channels for promotion, and decide on any additional activities needed to reach your goals. "
     use these topic, prompt pair examples only as guidlines to create an effective prompt for the next topic. even if the topic is mensioned before. You will create
     only prompt for it and not act on the previous description. if the topic is mensioned already,
     do not use the prompt which you were given, change it.

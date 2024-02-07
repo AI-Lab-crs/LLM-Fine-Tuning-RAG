@@ -51,8 +51,8 @@ class MySpecialFunctions:
     
     def get_text_chunks(self, text):
         text_siplitter = RecursiveCharacterTextSplitter(
-            chunk_size = 1000, 
-            chunk_overlap = 200,
+            chunk_size = 100, 
+            chunk_overlap = 20,
             separators=['\n', '\n\n'],
             length_function = len)
         chunk = text_siplitter.split_text(text)

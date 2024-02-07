@@ -69,6 +69,20 @@ def get_conversation_chain(vectorstore):
     )
     return conversation_chain
 
+
+# def get_generate(vectorstore):
+#     llm = ChatOpenAI()
+#     memory = ConversationBufferMemory(memory_key='chat_history', return_messages=True)
+#     generate_chain = ConversationalRetrievalChain.from_llm(
+#         llm = llm,
+#         retriever= vectorstore.as_retriever(),
+#         memory = memory
+#     )
+#     return generate_chain
+
+
+
+
     
 
 def handle_userinput(user_question):
